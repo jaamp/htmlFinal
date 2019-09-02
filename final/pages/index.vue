@@ -19,7 +19,15 @@ export default {
     components: {
         Nav,
         IndexHeader
+    },
+         head () {
+    return {
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        { hid: 'description', name: 'Vue and Nuxt', content: 'Vue Nuxt project home' }
+      ]
     }
+  }
 }
 
 </script>

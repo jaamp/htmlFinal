@@ -1,9 +1,6 @@
 
 export default {
 
-  router: {
-    base: '/HTML300-Week9'
-  },
 
   mode: 'universal',
   /*
@@ -14,7 +11,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'Vue and Nuxt exercise', content: process.env.npm_package_description || 'An alternate content description' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

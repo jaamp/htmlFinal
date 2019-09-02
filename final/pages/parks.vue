@@ -65,7 +65,15 @@ export default {
     components: {
         Nav,
         ParkHeader
+    },
+     head () {
+    return {
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        { hid: 'description', name: 'National Park Service', content: 'National Parks in Washington State' }
+      ]
     }
+  }
 }
 
 </script>

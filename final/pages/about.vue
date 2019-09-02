@@ -20,7 +20,15 @@ export default {
     components: {
         Nav,
         AboutHeader
+    },
+         head () {
+    return {
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        { hid: 'description', name: 'About Us', content: 'lorem About Us page' }
+      ]
     }
+  }
 }
 
 </script>

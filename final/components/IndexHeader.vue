@@ -1,6 +1,6 @@
 <template>
 <div class="header">
-<h1>Project Home</h1>
+<h1>{{ title }}</h1>
 <Nav />
 </div>
 </template>
@@ -11,7 +11,17 @@ import Nav from '../components/Nav'
 export default {
     components: {
         Nav
+    },
+        data () {
+        return {
+    title: "Project Home"
+        }
+    },
+         head () {
+    return {
+        title: this.title
     }
+  }
 }
 
 </script>
